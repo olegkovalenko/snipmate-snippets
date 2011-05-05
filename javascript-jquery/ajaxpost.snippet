@@ -1,5 +1,5 @@
-$.post('<+/path/to/file.cgi+>',{
- <+<+param1+>: "<+value1+>", <+param2+>: "<+value2+>"+>},
+$.post('${1:/path/to/file.cgi}',{
+ ${${param1}: "${value1}", ${param2}: "${value2}"}},
  function(){
-    <+//stuff to do after event occurs;+>
+    ${//stuff to do after event occurs;}
 });
